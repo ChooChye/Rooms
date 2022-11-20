@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    a {
+        @apply transition-all hover:underline;
+    }
+}
+@layer components {
+    .btn-primary {
+        @apply bg-torquise-500 border-2 border-transparent p-3 px-4 rounded-lg ring-inset ring-transparent ring-4 text-white font-semibold shadow-lg transition-all
+        hover:bg-torquise-600 hover:shadow active:ring-blue-400;
+    }
+    .btn-outline-primary {
+        @apply border-2 border-torquise-500 p-3 px-4 rounded-lg ring-inset ring-transparent ring-4 text-white font-semibold shadow-lg transition-all
+        hover:shadow active:ring-blue-400 hover:bg-torquise-500;
+    }
+    .form-control {
+        @apply border-2 border-[#ccc] rounded w-full h-full transition-colors
+        focus:border-teal-500 focus:ring-0;
+    }
+
+    .form-control.error {
+        @apply focus:ring-red-300;
+    }
+
+    .form-control.success {
+        @apply focus:ring-green-300;
+    }
+}
+
+.text-shadow {
+    text-shadow: 1px 2px 4px #000;
+}
+
+footer .footerSilh {
+    background-image: url('../images/city-silh2.png');
+    background-repeat: repeat-x;
+    height: 64px;
+    width: 100%;
+    background-size: contain;
+}
+footer .footer-links > li {
+    @apply md:inline mr-4;
+}
+footer a {
+    @apply decoration-teal-500;
+}
+footer .copyright {
+    @apply text-xs text-slate-500;
+}
