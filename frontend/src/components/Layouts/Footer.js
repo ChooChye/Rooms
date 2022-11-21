@@ -1,8 +1,9 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import silh from '@/images/city-silh.png'
+import React from 'react'
 import logo from '@/images/logo.png'
+import silh from '@/images/city-silh.png'
+
 export default function Footer() {
     
     return (
@@ -12,7 +13,7 @@ export default function Footer() {
                 <section className='bg-torquise-500 p-4'>
                     <div className="flex flex-row">
                         <div>
-                            <Image src={logo} />
+                            <Image src={logo} alt="logo"/>
                             <p className='copyright'>&copy; {new Date().getFullYear()} {process.env.NEXT_PUBLIC_APP}. All rights reserved</p>
                         </div>
                         <div className='flex-1 text-end'>

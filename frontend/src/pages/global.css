@@ -9,7 +9,7 @@
 }
 @layer components {
     .btn-primary {
-        @apply bg-torquise-500 border-2 border-transparent p-3 px-4 rounded-lg ring-inset ring-transparent ring-4 text-white font-semibold shadow-lg transition-all
+        @apply bg-torquise-500 border-2 border-transparent h-full py-2 px-3 rounded-lg ring-inset ring-transparent ring-4 text-white font-semibold shadow-lg transition-all
         hover:bg-torquise-600 hover:shadow active:ring-blue-400;
     }
     .btn-outline-primary {
@@ -49,4 +49,8 @@ footer a {
 }
 footer .copyright {
     @apply text-xs text-slate-500;
+}
+
+.roomList h4{
+    @apply text-2xl text-teal-500 font-black text-ellipsis
 }

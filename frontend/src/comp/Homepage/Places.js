@@ -1,17 +1,17 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import React from 'react'
 import kl from '@/images/places/kl.png'
 import { motion } from 'framer-motion'
 
 export default function Places() {
     return (
         <>
-            <motion.div 
-            initial={{ y: 250, opacity: 0}}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration:1 }}
-            className="px-12 md:px-36">
+            <motion.div
+                initial={{ y: 250, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="px-12 md:px-36">
                 <h2 className="mb-4 text-torquise-500 font-bold text-2xl underline">
                     Here are some cool places
                 </h2>
@@ -24,6 +24,7 @@ export default function Places() {
                                 src={kl}
                                 className="w-full object-cover mb-2 transition-all rounded-lg
                                         group-hover:scale-105"
+                                alt="Image"
                             />
                             <Link
                                 href="#"

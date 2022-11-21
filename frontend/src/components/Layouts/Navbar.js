@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
 import logo from '../../images/logo.png'
+import { useRouter } from 'next/router'
 
 export default function Navbar() {
     return (
         <nav className="p-4 mb-8">
             <div className="flex">
                 <div className="">
-                    <Image src={logo} className="w-full" />
+                    <Image src={logo} className="w-full" alt="logo" />
                 </div>
                 <div className="flex-1">
                     <div className="flex gap-4 justify-end ">
