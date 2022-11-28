@@ -7,7 +7,7 @@ export default function NavbarPage() {
         <nav className="p-4 mb-8 bg-torquise-500">
             <div className="flex">
                 <div className="">
-                    <Image src={logo} className="w-full" />
+                    <Image src={logo} className="w-full" alt="logo" />
                 </div>
                 <div className="flex-1">
                     <div className="flex gap-4 justify-end ">
@@ -17,7 +17,9 @@ export default function NavbarPage() {
                             </button>
                         </div>
                         <div>
-                            <button className="btn-primary bg-teal-500 hover:bg-teal-600">Post an Ad</button>
+                            <button className="btn-primary bg-teal-500 hover:bg-teal-600">
+                                Post an Ad
+                            </button>
                         </div>
                     </div>
                 </div>
