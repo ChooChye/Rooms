@@ -20,6 +20,8 @@ class CreateAdsTable extends Migration
             $table->string('ad_location');
             $table->longText('ad_description');
             $table->double('price');
+            $table->double('deposit');
+            $table->double('utility_deposit');
             $table->integer('status');
             $table->timestamps();
         });

@@ -9,5 +9,6 @@ class Ads extends Model
 {
     use HasFactory;
 
+    protected  $primaryKey = 'ad_code';
 
 }

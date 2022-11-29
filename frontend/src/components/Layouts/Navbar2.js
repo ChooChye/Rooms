@@ -7,7 +7,7 @@ export default function NavbarPage() {
         <nav className="p-4 mb-8 bg-torquise-500">
             <div className="flex">
                 <div className="">
-                    <Image src={logo} className="w-full" alt="logo" />
+                    <Image src={logo} className="w-[80%] md:w-full" alt="logo" />
                 </div>
                 <div className="flex-1">
                     <div className="flex gap-4 justify-end ">

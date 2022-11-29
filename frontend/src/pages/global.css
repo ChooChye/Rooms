@@ -9,11 +9,11 @@
 }
 @layer components {
     .btn-primary {
-        @apply bg-torquise-500 border-2 border-transparent h-full py-2 px-3 rounded-lg ring-inset ring-transparent ring-4 text-white font-semibold shadow-lg transition-all
+        @apply bg-torquise-500 border-2 border-transparent h-full py-1 px-2 rounded-lg ring-inset ring-transparent ring-4 text-white font-semibold shadow-lg transition-all
         hover:bg-torquise-600 hover:shadow active:ring-blue-400;
     }
     .btn-outline-primary {
-        @apply border-2 border-torquise-500 p-3 px-4 rounded-lg ring-inset ring-transparent ring-4 text-white font-semibold shadow-lg transition-all
+        @apply border-2 border-torquise-500 p-2 px-3 rounded-lg ring-inset ring-transparent ring-4 text-white font-semibold shadow-lg transition-all
         hover:shadow active:ring-blue-400 hover:bg-torquise-500;
     }
     .form-control {
@@ -27,6 +27,29 @@
 
     .form-control.success {
         @apply focus:ring-green-300;
+    }
+
+    .panel {
+        @apply border p-4 border-torquise-600 shadow-md;
+    }
+
+    .panel h4 {
+        @apply font-bold mb-4 text-xl text-teal-600;
+    }
+
+    .panel h4 > svg {
+        @apply mr-2;
+    }
+
+    .panel > div:first-child {
+        @apply pt-[70px] -mt-[70px];
+    }
+
+    .facilities > dd{
+        margin-left: 1.2rem;
+        display: list-item;
+        list-style-type: '✅';
+        padding-inline-start: 1ch;
     }
 }
 
@@ -51,6 +74,34 @@ footer .copyright {
     @apply text-xs text-slate-500;
 }
 
-.roomList h4{
-    @apply text-2xl text-teal-500 font-black text-ellipsis
+.roomList h4 {
+    @apply text-2xl text-teal-500 font-black text-ellipsis;
+}
+
+.anchor-buttons {
+    @apply w-full border border-teal-300 p-2 font-semibold transition-all ease-in-out
+     hover:bg-teal-600 active:ring-teal-700 active:ring-inset active:ring-8;
+}
+
+.text-muted {
+    @apply text-xs text-slate-500;
+}
+.userInfo {
+    @apply w-full border-2 p-2 shadow-sm md:border-torquise-600 md:border;
+}
+.userInfo > div > a {
+    @apply font-bold;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    @apply text-torquise-200 !important;
+}
+.swiper-pagination-bullet {
+    background: #fff !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #7fbcd2 !important;
 }

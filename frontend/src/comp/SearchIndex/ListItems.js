@@ -6,11 +6,12 @@ import Moment from 'react-moment'
 import React from 'react'
 import image from '@/images/hero2.jpg'
 import moment from 'moment'
+import Link from 'next/link'
 
 export default function ListItems({ list }) {
     return (
         <>
-            {list.map(({ id, ad_title, price, created_at }) => (
+            {list.map(({ id, ad_code, ad_title, price, created_at }) => (
                 <div
                     className="border border-torquise-500 shadow-lg mb-4"
                     key={id}>
@@ -23,15 +24,26 @@ export default function ListItems({ list }) {
                             />
                         </div>
                         <div className="flex-1 p-2">
-                            <h4>{ad_title}</h4>
+                            <Link href={"../rooms/" + ad_code}>
+                                <h4>{ad_title}</h4>
+                            </Link>
+
                             <p className="text-xs text-slate-500">
-                                <FontAwesomeIcon icon={faClock} size="xs" className="mr-1 text-torquise-500"/>
+                                <FontAwesomeIcon
+                                    icon={faClock}
+                                    size="xs"
+                                    className="mr-1 text-torquise-500"
+                                />
                                 <Moment format="ddd DD, MMM YYYY">
                                     {created_at}
                                 </Moment>
                             </p>
                             <p className="text-xs text-slate-500">
-                                <FontAwesomeIcon icon={faLocationDot} size="xs" className="mr-1 text-torquise-500"/>
+                                <FontAwesomeIcon
+                                    icon={faLocationDot}
+                                    size="xs"
+                                    className="mr-1 text-torquise-500"
+                                />
                                 Ampang, Kuala Lumpur
                             </p>
                             <ul className="mt-4 text-sm list-disc ml-4 text-slate-500">

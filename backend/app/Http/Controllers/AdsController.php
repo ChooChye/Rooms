@@ -17,6 +17,11 @@ class AdsController extends Controller
         return Ads::all();
     }
 
+    public function room($code)
+    {
+        return Ads::find($code);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

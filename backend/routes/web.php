@@ -19,5 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/api/rooms', [AdsController::class, 'index']);
+Route::get('/api/rooms/{code}', [AdsController::class, 'room']);
 
 require __DIR__ . '/auth.php';
